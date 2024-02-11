@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_nested"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="always">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dataTextView"
+        android:text="@string/no_data"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/receiveButton"
+        android:text="@string/get_data"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/dataEditText"
+        android:hint="@string/put_data_here"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:text="@string/save_data"
+        android:height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+</LinearLayout>
+
+    <com.eliseev.cleanapp.presentation.viewhistoryprices.HistoryPrices
+        android:id="@+id/linearPrices"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        android:layout_weight="1">
+    </com.eliseev.cleanapp.presentation.viewhistoryprices.HistoryPrices>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

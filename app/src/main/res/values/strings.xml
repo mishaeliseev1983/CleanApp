@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Цены на безин</string>
+    <string name="no_data">Нет данных</string>
+    <string name="history">История цен на бензин</string>
+    <string name="get_data">Узнать цену за литр</string>
+    <string name="put_data_here">Введите цену сюда</string>
+    <string name="save_data">Сохранить цену за литр</string>
+    <string name="save_successfully">Успешно сохранили</string>
+    <string name="no_saved">Не удалось сохранить</string>
+    <string name="show_more">Показать еще</string>
+    <string name="hide">Скрыть</string>
+</resources>
